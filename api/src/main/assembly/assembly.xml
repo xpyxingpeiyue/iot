@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+    <id>assembly</id>
+    <formats>
+        <format>war</format>  <!-- 其他可选格式 gzip/zip/tar.gz/ -->
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <!-- 将项目依赖的JAR包输出到 WEB-INF/lib -->
+        <dependencySet>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.outputDirectory}</directory>
+            <outputDirectory>WEB-INF/classes</outputDirectory>
+        </fileSet>
+        <!-- 将 webapp 下的文件输出到 WAR 包 -->
+        <fileSet>
+            <directory>${project.basedir}/src/main/webapp</directory>
+            <outputDirectory>/</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>

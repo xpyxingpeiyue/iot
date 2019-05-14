@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: iot
+  jackson:
+    time-zone: GMT+8
+  datasource:
+      url: jdbc:mysql://whht-m.dbsit.sfdc.com.cn:3306/whht?useUnicode=true&characterEncoding=UTF8&useSSL=true
+      username: whht
+      password: oiL23rS7tl
+      driverClassName: com.mysql.jdbc.Driver
+
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+
+server:
+  port: 9100

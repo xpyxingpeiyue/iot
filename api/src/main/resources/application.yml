@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: ${server.env}
+  application:
+    name: iot
+  jackson:
+    time-zone: GMT+8
+  datasource:
+      url: ${jdbc.url}
+      username: ${jdbc.username}
+      password: ${jdbc.password}
+      driverClassName: ${jdbc.driver}
+
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+
+server:
+  port: ${server.port}
