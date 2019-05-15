@@ -11,6 +11,9 @@
 
     <artifactId>api</artifactId>
     <packaging>jar</packaging>
+    <properties>
+        <feign.version>10.2.0</feign.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -20,8 +23,20 @@
         </dependency>
         <dependency>
             <groupId>com.tenet.iot</groupId>
+            <artifactId>system</artifactId>
+            <version>${iot-system.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tenet.iot</groupId>
             <artifactId>framework</artifactId>
             <version>${iot-framework.version}</version>
+        </dependency>
+
+        <!--feign-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
+            <version>${feign.version}</version>
         </dependency>
 
         <!--test-->

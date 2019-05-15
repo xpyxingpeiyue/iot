@@ -13,6 +13,7 @@
         <iot-spi.version>1.0-SNAPSHOT</iot-spi.version>
         <iot-parking.version>1.0-SNAPSHOT</iot-parking.version>
         <iot-framework.version>1.0-SNAPSHOT</iot-framework.version>
+        <iot-system.version>1.0-SNAPSHOT</iot-system.version>
         <spring-boot.version>2.1.4.RELEASE</spring-boot.version>
     </properties>
     <modules>
@@ -20,6 +21,7 @@
         <module>spi</module>
         <module>parking</module>
         <module>framework</module>
+        <module>system</module>
     </modules>
     <build>
         <resources>
@@ -48,10 +50,6 @@
                 <version>3.1.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <nonFilteredFileExtensions>
-                        <nonFilteredFileExtension>xlsx</nonFilteredFileExtension>
-                        <nonFilteredFileExtension>xls</nonFilteredFileExtension>
-                    </nonFilteredFileExtensions>
                 </configuration>
             </plugin>
             <plugin>

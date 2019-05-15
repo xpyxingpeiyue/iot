@@ -14,6 +14,10 @@ spring:
 
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*.xml
-
+charging:
+ accessKeyID: knh45jseresdccdsa
+ version: 2016-01-28
+ commkey: fd511sdfdsa5df
+ accessKeySecret: fhsdjfkahf45
 server:
   port: 9100

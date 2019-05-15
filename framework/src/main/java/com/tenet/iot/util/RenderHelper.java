@@ -7,6 +7,9 @@ import cn.hutool.log.LogFactory;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * @author xing
+ */
 @SuppressWarnings("unused")
 public class RenderHelper {
     private static final Log log = LogFactory.get();

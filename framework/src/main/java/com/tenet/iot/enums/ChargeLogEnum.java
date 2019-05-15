@@ -4,19 +4,18 @@ public enum ChargeLogEnum {
     DIRECT("直流", 1),
     EXCHANGE("交流", 2),
 
-    CHARGE_FULL("充满", 0),
-    CHARGE_MONEY("金额控制", 2),
-    CHARGE_ELECTRIC("电量控制", 3);
-    private String index;
+    CHARGE_RUNNING("充电中", 1),
+    CHARGE_FULL("充电完成", 2);
+    private String name;
     private int value;
 
     ChargeLogEnum(String name, int value) {
-        this.index = index;
+        this.name = name;
         this.value = value;
     }
 
-    public String getIndex() {
-        return index;
+    public String getName() {
+        return name;
     }
 
     public int getValue() {

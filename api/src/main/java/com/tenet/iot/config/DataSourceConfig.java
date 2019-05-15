@@ -7,6 +7,9 @@ import org.springframework.core.env.Environment;
 
 import javax.sql.DataSource;
 
+/**
+ * @author  xing
+ */
 @Configuration
 public class DataSourceConfig {
     @Bean(name = "dataSource")

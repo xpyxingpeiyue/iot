@@ -14,6 +14,10 @@ spring:
 
 mybatis-plus:
   mapper-locations: classpath*:mapper/**/*.xml
-
+charging:
+ accessKeyID: ${charging.accessKeyID}
+ version: ${charging.version}
+ commkey: ${charging.commkey}
+ accessKeySecret: ${charging.accessKeySecret}
 server:
   port: ${server.port}
